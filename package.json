@@ -1,0 +1,23 @@
+{
+  "name": "svn-log",
+  "version": "1.0.0",
+  "description": "SVNLog",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . SVNLog --win --out ../ --arch=x64"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.1.1"
+  }
+}

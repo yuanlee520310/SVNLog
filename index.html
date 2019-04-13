@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SVNLog</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px;
+            font-family: Arial;
+        }
+        textarea {
+            width: 100%;
+            height:400px;
+        }
+        dl {
+            padding-bottom: 10px;
+        }
+        dt {
+            float: left;
+            width: 50px;
+            line-height: 24px;
+        }
+        dd {
+            margin-left: 50px;
+        }
+        dd input {
+            width: 50%;
+            line-height: 22px;
+        }
+        #btn {
+            width: 100%;
+            padding: 5px;
+            margin-bottom:5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<dl>
+    <dt>内容：</dt>
+    <dd><input type="text" id="content" value="UI调整；Bug修复；"/></dd>
+</dl>
+
+<dl>
+    <dt>SVNLog:</dt>
+</dl>
+<textarea name="" id="log" cols="30" rows="10"></textarea>
+<button id="btn">Clear</button>
+<textarea name="" id="clear" cols="30" rows="10"></textarea>
+</body>
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+</script>
+</html>
